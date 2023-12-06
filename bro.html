@@ -1,0 +1,117 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-items"></span>
+                <img src="images/cart1.webp" alt="">
+                <div class="content">
+                    <h3>Cart item 01</h3>
+                    <div class="price"> <b>$12.7</b></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-items"></span>
+                <img src="images/cart2.jpg" alt="">
+                <div class="content">
+                    <h3>Cart item 02</h3>
+                    <div class="price"><b>$12.7 </b></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-items"></span>
+                <img src="images/cart3.webp" alt="">
+                <div class="content">
+                    <h3>Cart item 03</h3>
+                    <div class="price"><b>$12.7</b></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-items"></span>
+                <img src="images/cart4.jpg" alt="">
+                <div class="content">
+                    <h3>Cart item 04</h3>
+                    <div class="price"><b>$12.7</b></div>
+                </div>
+                </header>
+    </body>
+
+</html>
+
+
+.header .cart-items-container {
+position: absolute;
+top: 100%;
+right: -100%;
+height: calc(100vh - 9.5rem);
+width: 89rem;
+background: #fff;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+gap: 1.5rem;
+padding: 0 1.5rem;
+background: url(images/background2.jpg) no-repeat;
+background-size: cover;
+box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+overflow: hidden;
+}
+
+
+
+
+
+
+.header .cart-item-container .active{
+right: 0;
+}
+
+.header .cart-item .fas-items {
+position: absolute;
+top: 1rem; right: 1rem;
+color: #000;
+font-size: 2 rem;
+cursor: pointer;
+color: var(--black);
+margin-right: 10px;
+}
+.header .cart-item .fas-items:hover{
+color: var(--main-color);
+}
+
+.header .cart-item img {
+border-radius: 10px;
+height: 100px;
+margin-bottom: 20px;
+object-fit: cover;
+width: 100%;
+max-width: 100%;
+}
+
+.header .cart-item .content h3 {
+color: #000;
+font-size: 2rem;
+margin-bottom: 5px;
+padding-bottom: .5rem;
+}
+
+.cart-item .content .price {
+color: #ff6700;
+font-size: 20px;
+}
+
+.header .cart-items-container .btn{
+width: 100%;
+text-align: center;
+}
