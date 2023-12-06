@@ -736,6 +736,7 @@ btn:hover{
     background: #fff;
     width: 30rem;
     height: calc(100vh - 9.5rem);
+    display: none;
 }
 .header .navbar.active{
     right: 0;
